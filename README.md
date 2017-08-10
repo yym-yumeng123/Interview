@@ -5,6 +5,7 @@
 ### HTML+CSS
 
 - [HTML XHTML XML有什么区别](https://github.com/yym-yumeng123/Interview/issues/1)
+- [怎么理解HTML语义化](https://github.com/yym-yumeng123/Interview/issues/2)
 
 
 ### HTML5+CSS3
