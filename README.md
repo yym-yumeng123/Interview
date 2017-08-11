@@ -10,6 +10,7 @@
 - [HTML标签以及应用场景](https://github.com/yym-yumeng123/Interview/issues/5)
 - [常见的浏览器有哪些，什么内核](https://github.com/yym-yumeng123/Interview/issues/6)
 ### 任务5
+- [form表单有什么作用？有哪些常用的input 标签，分别有什么作用？](https://github.com/yym-yumeng123/Interview/issues/7)
 
 
 ### HTML+CSS
