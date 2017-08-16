@@ -15,14 +15,15 @@
 - [在input里，name 有什么作用？radio 如何 分组? placeholder 属性有什么作用?](https://github.com/yym-yumeng123/Interview/issues/9)
 - [type=hidden隐藏域有什么作用? 举例说明](https://github.com/yym-yumeng123/Interview/issues/10)
 - [HTML表单用法](https://github.com/yym-yumeng123/Interview/issues/11)
+### 任务6
+- [CSS有几种引入方式? link 和@import 有什么区别?](https://github.com/yym-yumeng123/Interview/issues/14)
+- [以下几种文件路径分别用在什么地方，代表什么意思?](https://github.com/yym-yumeng123/Interview/issues/15)
+
+
 
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [行内元素和块级元素的区别](https://github.com/yym-yumeng123/Interview/issues/13)
-
-### 任务6
-- [CSS有几种引入方式? link 和@import 有什么区别?](https://github.com/yym-yumeng123/Interview/issues/14)
-- [以下几种文件路径分别用在什么地方，代表什么意思?](https://github.com/yym-yumeng123/Interview/issues/15)
 
 ### HTML5+CSS3
 
