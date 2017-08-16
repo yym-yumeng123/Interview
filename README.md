@@ -21,7 +21,7 @@
 - [行内元素和块级元素的区别](https://github.com/yym-yumeng123/Interview/issues/13)
 
 ### 任务6
-
+- [CSS有几种引入方式? link 和@import 有什么区别?](https://github.com/yym-yumeng123/Interview/issues/14)
 
 
 ### HTML5+CSS3
