@@ -26,6 +26,7 @@
 - [什么是 CSS 继承? 哪些属性能继承，哪些不能？](https://github.com/yym-yumeng123/Blog//issues/8)
 - [如何让块级元素水平居中？如何让行内元素水平居中?](https://github.com/yym-yumeng123/Blog/issues/12)
 - [px, em, rem 有什么区别](https://github.com/yym-yumeng123/Blog/issues/7)
+- [用css实现一个三角形](https://github.com/yym-yumeng123/Interview/issues/20)
 ### HTML和CSS任务9
 
 
