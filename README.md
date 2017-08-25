@@ -31,6 +31,7 @@
 效果预览:
 - [border](https://yym-yumeng123.github.io/Interview/border.html)
 - [按钮](https://yym-yumeng123.github.io/Interview/button.html)
+- [表格](https://yym-yumeng123.github.io/Interview/table.html)
 ### HTML和CSS任务9
 
 
