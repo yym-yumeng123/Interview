@@ -35,7 +35,7 @@
 - [三角形](https://yym-yumeng123.github.io/Interview/square.html)
 - [卡片](https://yym-yumeng123.github.io/Interview/Card.html)
 ### HTML和CSS任务9
-
+- [text-align: center的作用是什么，作用在什么元素上？能让什么元素水平居中](https://github.com/yym-yumeng123/Interview/issues/21)
 
 
 ### HTML和CSS任务10
