@@ -27,10 +27,10 @@
 - [如何让块级元素水平居中？如何让行内元素水平居中?](https://github.com/yym-yumeng123/Blog/issues/12)
 - [px, em, rem 有什么区别](https://github.com/yym-yumeng123/Blog/issues/7)
 - [用css实现一个三角形](https://github.com/yym-yumeng123/Interview/issues/20)
-- 效果预览:
-    - [border](https://yym-yumeng123.github.io/Interview/border.html)
-    
-    - [按钮](https://yym-yumeng123.github.io/Interview/button.html)
+
+效果预览:
+- [border](https://yym-yumeng123.github.io/Interview/border.html)
+- [按钮](https://yym-yumeng123.github.io/Interview/button.html)
 ### HTML和CSS任务9
 
 
