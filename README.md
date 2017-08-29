@@ -49,7 +49,8 @@
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
 - [异步加载脚本](https://github.com/yym-yumeng123/Interview/issues/18)
 - [白屏和 FOUC(无样式内容闪烁)](https://github.com/yym-yumeng123/Interview/issues/19)
-
+### javaScript任务4
+- [JS task4 question(作用域and引用类型)](https://github.com/yym-yumeng123/Interview/issues/23)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 
