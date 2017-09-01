@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模态框效果</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing:border-box;
+		}
+		.clearfix:after{
+			content: '';
+			display: block;
+			overflow: hidden;
+			width: 0;
+			height: 0;
+		}
+		.layout{
+			width: 610px;
+			margin: 0 auto;
+		}
+		.layout h1{
+			position: relative;
+			z-index: 10;
+			margin-top: 20px;
+		}
+		.layout .model{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: #999;
+		}
+		.layout .model .panal{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 610px;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            /*阴影借鉴了一下*/
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.layout .model header{
+			background: #009688;
+			padding: 10px 10px;
+		}
+		.layout .model header span{
+			float: right;
+		}
+		.layout .model main{
+			padding: 30px 10px;
+		}
+		.layout .model footer{
+			background: #009688;
+			padding: 10px 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 借鉴了类名 -->
+	<div class="layout">
+		<h1>这是页面内容</h1>
+		<h1>这是页面内容</h1>
+		<h1>这是页面内容</h1>
+
+		<div class="model">
+			<div class="panal">
+				<header class="clearfix">
+				<span>X</span>
+				<h2>头部</h2>
+				</header>
+				<main>
+					<p>这是内容</p>
+					<p>这是内容</p>
+				</main>
+				<footer>
+					<p>尾部</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
