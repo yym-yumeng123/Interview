@@ -18,9 +18,6 @@
 ### HTML和CSS任务6
 - [CSS有几种引入方式? link 和@import 有什么区别?](https://github.com/yym-yumeng123/Interview/issues/14)
 - [以下几种文件路径分别用在什么地方，代表什么意思?](https://github.com/yym-yumeng123/Interview/issues/15)
-### HTML和CSS任务7
-
-
 ### HTML和CSS任务8
 - [行内元素和块级元素的区别](https://github.com/yym-yumeng123/Interview/issues/13)
 - [什么是 CSS 继承? 哪些属性能继承，哪些不能？](https://github.com/yym-yumeng123/Blog//issues/8)
