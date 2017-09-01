@@ -42,6 +42,9 @@
 - [inline-block有什么特性？如何去除缝隙？高度不一样的inline-block元素如何顶端对齐?](https://github.com/yym-yumeng123/Blog/issues/28)
 - [ CSS sprite 是什么?](https://github.com/yym-yumeng123/Interview/issues/27)
 - [让一个元素"看不见"有几种方式？有什么区别?](https://github.com/yym-yumeng123/Interview/issues/28)
+
+效果预览
+- [css sprite](https://yym-yumeng123.github.io/Interview/sprite.html)
 ### HTML和CSS任务10
 
 
