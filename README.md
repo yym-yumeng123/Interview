@@ -45,6 +45,7 @@
 
 效果预览
 - [css sprite](https://yym-yumeng123.github.io/Interview/sprite.html)
+- [字体图标应用](https://yym-yumeng123.github.io/Interview/fontface.html)
 ### HTML和CSS任务10
 
 
