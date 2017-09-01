@@ -40,6 +40,7 @@
 - [*{ box-sizing: border-box;}的作用是什么？](https://github.com/yym-yumeng123/Interview/issues/25)
 - [line-height: 2和line-height: 200%有什么区别?](https://github.com/yym-yumeng123/Interview/issues/26)
 - [inline-block有什么特性？如何去除缝隙？高度不一样的inline-block元素如何顶端对齐?](https://github.com/yym-yumeng123/Blog/issues/28)
+- [ CSS sprite 是什么?](https://github.com/yym-yumeng123/Interview/issues/27)
 ### HTML和CSS任务10
 
 
