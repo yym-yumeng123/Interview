@@ -50,6 +50,9 @@
 - [position:relative和负margin都可以使元素位置发生偏移?二者有什么区别](https://github.com/yym-yumeng123/Interview/issues/31)
 - [BFC 是什么？如何生成 BFC？BFC 有什么作用？举例说明](https://github.com/yym-yumeng123/Interview/issues/32)
 - [外边距合并问题](https://github.com/yym-yumeng123/Interview/issues/34)
+
+效果预览
+- [导航栏](https://yym-yumeng123.github.io/my-practice/nav.html)
 ### javaScript任务1
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
