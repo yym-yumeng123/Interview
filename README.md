@@ -71,7 +71,6 @@
 
 
 ### JS
-- [数组题目1](https://github.com/yym-yumeng123/Interview/issues/24)
-
-
+- [嵌套多层数组变为一层的函数](https://github.com/yym-yumeng123/Interview/issues/24)
+- [实现reduce()功能的函数](https://github.com/yym-yumeng123/Interview/issues/33)
 ### Ajax
