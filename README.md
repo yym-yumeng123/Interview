@@ -49,6 +49,7 @@
 - [有几种定位方式，分别是如何实现定位的，参考点是什么，使用场景是什么？ z-index 有什么作用? 如何使用?](https://github.com/yym-yumeng123/Blog/issues/10)
 - [position:relative和负margin都可以使元素位置发生偏移?二者有什么区别](https://github.com/yym-yumeng123/Interview/issues/31)
 - [BFC 是什么？如何生成 BFC？BFC 有什么作用？举例说明](https://github.com/yym-yumeng123/Interview/issues/32)
+- [外边距合并问题](https://github.com/yym-yumeng123/Interview/issues/34)
 ### javaScript任务1
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
