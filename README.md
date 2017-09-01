@@ -47,7 +47,7 @@
 - [浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响?](https://github.com/yym-yumeng123/Interview/issues/29)
 - [清除浮动指什么? 如何清除浮动? 两种以上方法](https://github.com/yym-yumeng123/Interview/issues/30)
 - [有几种定位方式，分别是如何实现定位的，参考点是什么，使用场景是什么？ z-index 有什么作用? 如何使用?](https://github.com/yym-yumeng123/Blog/issues/10)
-
+- [position:relative和负margin都可以使元素位置发生偏移?二者有什么区别](https://github.com/yym-yumeng123/Interview/issues/31)
 
 ### javaScript任务1
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
