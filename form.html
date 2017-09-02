@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+    }
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .layout{
+      width: 600px;
+      margin: 0 auto;
+    }
+    .layout .information{
+      box-shadow: 1px 0 8px red,1px 0 8px red;
+      padding-bottom: 10px;
+    }
+    .layout .information h1{
+      padding: 10px;
+      background: #009688;
+    }
+    .layout .information form{
+      margin: 10px;
+    }
+    .layout .information form div{
+      margin-top: 10px;
+    }
+    .layout .information form label{
+      vertical-align: middle;
+    }
+    .layout .information form input[type=text],.layout .information form textarea{
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #808080;
+      padding: 10px 0;
+    }
+     .layout .information form .checked .check{
+      float: left;
+      width: 50%;
+    }
+    .layout .information form .checked .radio{
+      float: right;
+      width: 50%;
+    }
+    .layout .information form .submit input[type=submit]{
+      margin-top: 20px;
+      padding: 10px;
+      background:  #009688;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="information">
+      <h1>信息收集表</h1>
+      <form action="">
+        <!-- 姓名 -->
+        <div>
+          <label for="name">姓名</label>
+          <input type="text" id="name" name="name">
+        </div>
+        <!-- qq -->
+        <div>
+          <label for="qq">QQ</label>
+          <input type="text" id="qq" name="qq">
+        </div>
+        <!-- talk -->
+        <div>
+          <label for="talk">要说的话</label>
+          <textarea name="talk" id="talk" cols="30" rows="10"></textarea>
+        </div>
+        <!-- 选择 -->
+        <div class = "checked clearfix">
+          <div class="check">
+            <input type="checkbox" name="drink" id="milk" checked="checked">
+            <label for="milk">Milk</label>
+            <br>
+            <input type="checkbox" nmae="drink" id="sugar">
+            <label for="sugar">Sugar</label>
+            <br>
+            <input type="checkbox" name="drink" id="lemon">
+            <label for="lemon">Lemon</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="sex" id="male" checked="checked">
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" name="sex" id="female">
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <!-- 提交 -->
+        <div class="submit">
+          <input type="submit">
+        </div>
+      </form> 
+    </div>
+  </div>
+</body>
+</html>
