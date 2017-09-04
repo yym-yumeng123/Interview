@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>列表布局</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		ul{list-style: none;}
+		.container{
+			width: 802px;
+			margin: 0 auto;
+		}
+		.container header{
+			margin-top: 15px;
+			text-align: center;
+			font: 35px/1.5em "微软雅黑";
+			font-weight: bold;
+			border-bottom: 1px solid #ccc;
+			color: #666;
+		}
+		.container main{
+			margin-top: 40px;
+			opacity: .6;
+		}
+		main .list::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		/*这个margin-left:-10px借鉴了老师的思路*/
+		main .list{
+			margin-left: -10px;
+		}
+		main .list li{
+			box-sizing:border-box;
+			float: left;
+			text-align: center;
+			margin-left: 10px;
+		}
+		main .list li img{
+			width: 260px;
+			height: 175px;
+		}
+		main .list li p{
+			box-shadow: 1px 2px 1px 2px #ccc;
+			padding: 10px;
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>风景如画</header>
+		<main>
+			<ul class="list">
+				<li>
+					<img src="images/1.jpg" alt="风景画">
+					<p>风景如画</p>
+				</li>
+				<li>
+					<img src="images/1.jpg" alt="风景画">
+					<p>风景如画</p>
+				</li>
+				<li>
+					<img src="images/1.jpg" alt="风景画">
+					<p>风景如画</p>
+				</li>
+				<li>
+					<img src="images/1.jpg" alt="风景画">
+					<p>风景如画</p>
+				</li>
+				<li>
+					<img src="images/1.jpg" alt="风景画">
+					<p>风景如画</p>
+				</li>
+				<li>
+					<img src="images/1.jpg" alt="风景画">
+					<p>风景如画</p>
+				</li>
+			</ul>
+		</main>
+	</div>
+</body>
+</html>

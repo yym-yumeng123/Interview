@@ -1,0 +1,78 @@
+#content{
+			position: relative;
+			width: 520px;
+			border: 1px solid #ccc;
+			margin: 200px auto;
+			padding: 20px;
+		}
+		.clearfix::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		aside{
+			width: 350px;
+		}
+		aside .g-hd{
+			margin-bottom: 20px;
+		}
+		
+		aside .g-hd img{
+			float: left;
+			height: 35px;
+			width: 35px;
+			border-radius: 50%;
+		}
+		aside .g-hd .name{
+			float: left;
+			margin-left: 10px;
+			line-height: 35px;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: "微软雅黑";
+		}
+		aside .g-hd .time{
+			float: left;
+			line-height: 35px;
+			margin-left: 10px;
+			color: #969696; 
+		}
+
+		aside .g-bd{
+			width: 350px;
+			height: 150px;
+		}
+		aside .g-bd h2{
+			font-size: 18px;
+			line-height: 1.5;
+			font-weight: bold;
+			font-family: "微软雅黑";
+			margin-bottom: 5px;
+		}
+		aside .g-bd p{
+			margin: 0 0 8px;
+    		font-size: 13px;
+    		line-height: 24px;
+		}
+
+		aside .g-ft .write{
+			
+			padding: 2px 6px;
+        	color: #ea6f5a!important;
+        	border: 1px solid rgba(236,97,73,.7);
+        	border-radius: 3px;
+		}
+		aside .g-ft a.num{
+			margin-right: 10px;
+			margin-left: 10px; 
+    		color: #b4b4b4;
+		}
+
+
+		#content .img{
+			position: absolute;
+			top: 35%;
+			right: 35px;
+			width: 125px;
+			height: 100px;
+		}
