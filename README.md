@@ -66,7 +66,10 @@
 - [风景画float布局](https://yym-yumeng123.github.io/Interview/list/list.html)
 ### HTML和CSS任务12
 - [浏览器兼容问题](https://github.com/yym-yumeng123/Interview/issues/37)
-
+### HTML和CSS任务13
+- [遵守的编码规范]()
+- [垂直居中有几种实现方式](https://github.com/yym-yumeng123/Blog/issues/12)
+- [伪元素三角实现]()
 ### javaScript任务1
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
