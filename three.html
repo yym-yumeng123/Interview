@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>三列</title>
+  <style>
+    #content:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .menu{
+      width: 100px;
+      height: 500px;
+      background: green;
+      float: left;
+    }
+    .aside{
+      width: 200px;
+      height: 500px;
+      background: yellow;
+      float: right;
+    }
+    .main{
+      margin-left: 110px; 
+      margin-right: 210px;
+      height: 400px;
+      background: red;
+    }
+    
+    #footer{
+      background: #ccc;
+    }
+  
+  </style>
+</head>
+<body>
+  <div id="content">
+    <!-- 为什么不是main在前面 -->
+    <div class="menu">aside</div>
+   
+    <div class="aside">aside</div>
+     <div class="main">content</div>  
+  </div>
+</body>
+</html>
