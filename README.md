@@ -67,7 +67,7 @@
 ### HTML和CSS任务12
 - [浏览器兼容问题](https://github.com/yym-yumeng123/Interview/issues/37)
 ### HTML和CSS任务13
-- [遵守的编码规范]()
+- [遵守的编码规范](https://github.com/yym-yumeng123/Blog/issues/30)
 - [垂直居中有几种实现方式](https://github.com/yym-yumeng123/Blog/issues/12)
 - [伪元素三角实现](https://yym-yumeng123.github.io/Interview/wys.html)
 ### javaScript任务1
