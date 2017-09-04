@@ -57,6 +57,9 @@
 - [模态框效果](https://yym-yumeng123.github.io/Interview/panel.html)
 - [表单效果制作](https://yym-yumeng123.github.io/Interview/form.html)
 ### HTML和CSS任务11
+
+效果预览
+
 - [单列布局](https://yym-yumeng123.github.io/Interview/one.html)
 - [两列布局](https://yym-yumeng123.github.io/Interview/two.html)
 - [三列布局](https://yym-yumeng123.github.io/Interview/three.html)
@@ -69,8 +72,13 @@
 ### HTML和CSS任务13
 - [遵守的编码规范](https://github.com/yym-yumeng123/Blog/issues/30)
 - [垂直居中有几种实现方式](https://github.com/yym-yumeng123/Blog/issues/12)
+
+效果预览
+
 - [伪元素三角实现](https://yym-yumeng123.github.io/Interview/wys.html)
 ### HTML和CSS任务14
+效果预览
+
 - [简历项目模板页面](https://yym-yumeng123.github.io/Interview/item.html)
 ### javaScript任务1
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
