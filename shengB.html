@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body {
+		min-width: 600px; /* 2*sub + extra */
+	}
+	.container {
+		padding-left: 210px;
+		padding-right: 190px;
+	}
+	.main {
+		float: left;
+		width: 100%;
+		height: 300px;
+		background-color: red;
+	}
+	.sub {
+		position: relative;
+		left: -210px;
+		float: left;
+		width: 200px;
+		height: 300px;
+		margin-left: -100%;
+		background-color: blue;
+	}
+	.extra {
+		position: relative;
+		right: -190px;
+		float: left;
+		width: 180px;
+		height: 300px;
+		margin-left: -180px;
+		background-color: green;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="main"></div>
+		<div class="sub"></div>
+		<div class="extra"></div>
+	</div>
+</body>
+</html>
