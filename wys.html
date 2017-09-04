@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>伪元素画三角形</title>
+  <style>
+    div{
+      position: relative;
+      width: 300px;
+      height: 150px;
+      border: 1px solid #ccc;
+      margin: 30px;
+    }
+    .first::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid #ccc;
+      border-top: 10px solid #ccc;
+    }
+    .second::after{
+      content: '';
+      position: absolute;
+      top: -21px;
+      left: 10px;
+      border-bottom: 10px solid red;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid transparent;
+    }
+    .three::after{
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      border-bottom: 10px solid #fff;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+    .three::before{
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 10px;
+      border-bottom: 10px solid #f50909;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="first"></div>
+  <div class="second"></div>
+  <div class="three"></div>
+</body>
+</html>
