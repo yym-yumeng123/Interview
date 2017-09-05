@@ -1,0 +1,222 @@
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../iconfont/iconfont.woff') format('woff'),
+  url('../iconfont/iconfont.ttf') format('truetype'),
+  url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*header*/
+header figure{
+	position: relative;
+	float: left;
+	width: 50%;
+}
+header figure img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+header figure .name{
+	position: absolute;
+	left: 180px;
+	top: 35px;
+}
+header figure .name h1{
+	font-size: 30px;
+}
+header figure .name p{
+	font-size: 16px;
+	font-weight: 900;
+	margin-top: 20px;
+}
+header .information{
+	float: right;
+	width: 50%;
+}
+header .information h4{
+	font-size: 25px;
+	font-weight: bold;
+	border-bottom: 5px solid #282e2e;
+}
+header .information .individual{
+	margin-top: 10px;
+}
+header .information .individual li{
+	font-size: 16px;
+	line-height: 25px;
+}
+
+
+/*work-experience*/
+main .work{
+	margin-top: 50px;
+}
+main .work h3{
+	width: 50%;
+	padding-bottom: 10px; 
+	border-bottom: 1px solid #a0a0a0;
+	font-size: 20px;
+	font-weight: bold;
+}
+main .work .time-line{
+	position: relative;
+	margin-left: 50px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+main .work .time-line::after{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -50px;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #1f2427;
+}
+main .work .time-line::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -46px;
+	height: 100px;
+	border-left: 1px solid #1f2427;
+}
+main .work .time-line:last-child::before {
+    height: 50px;
+}
+main .work .experience h4{
+	font-size: 16px;
+}
+main .work .experience h4 span{
+	color: #0e1010;
+}
+main .work .experience p{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+/*school*/
+main .education h3{
+	width: 50%;
+	padding-bottom: 10px; 
+	border-bottom: 1px solid #a0a0a0;
+	font-size: 20px;
+	font-weight: bold;
+}
+main .education .time-line{
+	position: relative;
+	margin-left: 50px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+main .education .time-line::after{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -50px;
+	top: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #1f2427;
+}
+main .education .time-line::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: -46px;
+	height: 40px;
+	border-left: 1px solid #1f2427;
+}
+main .education .school h4{
+	font-size: 16px;
+}
+main .education .school h4 span{
+	color: #0e1010;
+}
+main .education .school p{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+/*footer*/
+footer .certificate{
+	float: left;
+	width: 50%;
+}
+footer .certificate h3{
+	width: 90%;
+	padding-bottom: 10px; 
+	border-bottom: 1px solid #a0a0a0;
+	font-size: 20px;
+	font-weight: bold;
+}
+footer .certificate .cer-skill{
+	position: relative;
+	margin-left: 50px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+}
+footer .certificate .cer-skill::before{
+	content: '+';
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: -50px;
+	font-size: 30px;
+	color: #191d1a;
+
+}
+footer .certificate .cer-skill h4{
+	font-size: 16px;
+}
+footer .certificate .cer-skill p{
+	font-size: 16px;
+	margin-top: 10px;
+	color: #0e1010;
+}
+footer .skill{
+	float: right;
+	width: 50%;
+}
+footer .skill h3{
+	width: 90%;
+	padding-bottom: 10px; 
+	border-bottom: 1px solid #a0a0a0;
+	font-size: 20px;
+	font-weight: bold;
+}
+footer .skill ul{
+	margin-left: 50px;
+}
+footer .skill ul li{
+	position: relative;
+	font-size: 16px;
+	line-height: 20px;
+	margin-top: 30px;
+}
+footer .skill ul li::before{
+	content: '+';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -50px;
+	font-size: 30px;
+	color: #191d1a;
+}
