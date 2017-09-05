@@ -79,7 +79,8 @@
 ### HTML和CSS任务14
 效果预览
 
-- [简历项目模板页面](https://yym-yumeng123.github.io/Interview/item.html)
+- [作品展示页面](https://yym-yumeng123.github.io/Interview/item.html)
+- [个人简历页面](https://yym-yumeng123.github.io/Interview/resume/resume.html)
 ### javaScript任务1
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
