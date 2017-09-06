@@ -86,6 +86,18 @@
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
 - [异步加载脚本](https://github.com/yym-yumeng123/Interview/issues/18)
 - [白屏和 FOUC(无样式内容闪烁)](https://github.com/yym-yumeng123/Interview/issues/19)
+### javaScript任务2
+- [数据类型,运算符,流程控制语句](https://github.com/yym-yumeng123/Interview/issues/39)
+    - JavaScript 定义了几种数据类型? 哪些是原始类型?哪些是复杂类型?原始类型和复杂类型的区别是什么?
+    - typeof和instanceof的作用和区别?
+    - 如何判断一个变量是否是数字、字符串、布尔、函数
+    - NaN是什么? 有什么特别之处?
+    - 如何把非数值转化为数值?
+    - ==与===有什么区别
+    - break与continue有什么区别
+    - void 0 和 undefined在使用场景上有什么区别
+### javaScript任务3
+
 ### javaScript任务4
 - [JS task4 question(作用域and引用类型)](https://github.com/yym-yumeng123/Interview/issues/23)
 ### HTML+CSS
