@@ -98,7 +98,7 @@
 - break与continue有什么区别
 - void 0 和 undefined在使用场景上有什么区别
 ### javaScript任务3
-- [函数与作用域)](https://github.com/yym-yumeng123/Interview/issues/40)
+- [函数与作用域](https://github.com/yym-yumeng123/Interview/issues/40)
 
 - 函数声明和函数表达式有什么区别
 - 什么是变量的声明前置？什么是函数的声明前置
@@ -107,7 +107,9 @@
 - 立即执行函数表达式是什么？有什么作用
 - 求n!，用递归来实现
 ### javaScript任务4
+- [引用类型,对象拷贝](https://github.com/yym-yumeng123/Interview/issues/41)
 
+### javaScript任务5
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
