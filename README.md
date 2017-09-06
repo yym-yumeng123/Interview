@@ -101,4 +101,5 @@
 - [实现reduce()功能的函数](https://github.com/yym-yumeng123/Interview/issues/33)
 - [实现一个map()函数,模拟原生的map函数](https://github.com/yym-yumeng123/Interview/issues/35)
 - [实现类似find()函数](https://github.com/yym-yumeng123/Interview/issues/36)
+- [filter 函数](https://github.com/yym-yumeng123/Interview/issues/38)
 ### Ajax
