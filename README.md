@@ -111,6 +111,8 @@
 
 ### javaScript任务5
 - [字符串,JSON](https://github.com/yym-yumeng123/Interview/issues/42)
+### javaScript任务6
+- [Math](https://github.com/yym-yumeng123/Interview/issues/43)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
