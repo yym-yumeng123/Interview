@@ -113,6 +113,7 @@
 - [字符串,JSON](https://github.com/yym-yumeng123/Interview/issues/42)
 ### javaScript任务6
 - [Math](https://github.com/yym-yumeng123/Interview/issues/43)
+- [数组任务](https://github.com/yym-yumeng123/Interview/issues/44)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
