@@ -37,16 +37,20 @@
     })
 
     btnE.addEventListener('click',function(){
+      if(ipt.value) {
         var li = document.createElement('li')
         li.innerText = ipt.value
         ct.appendChild(li)
+      }   
     })
 
     btnS.addEventListener('click', function(){
-        var li = document.createElement('li')
-        li.innerText = ipt.value
-        ct.insertBefore(li,ct.firstChild)
-    });
+       if (ipt.value) {
+         var li = document.createElement('li')
+         li.innerText = ipt.value
+         ct.insertBefore(li,ct.firstChild)
+      }
+    })
   </script>
 </body>
 </html>
