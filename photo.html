@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<ul class="ct">
+	  <li data-img="http://www.rizhi123.com/ueditor/php/upload/image/20170116/1484533362694503.jpg">鼠标放置查看图片1</li>
+	  <li data-img="http://pic.58pic.com/58pic/15/01/86/60V58PICF8v_1024.jpg">鼠标放置查看图片2</li>
+	  <li data-img="http://img2.duitang.com/uploads/item/201201/03/20120103124956_KtWQG.thumb.600_0.jpg">鼠标放置查看图片3</li>
+	</ul>
+
+	<div class="img-preview"></div>
+	<!-- 当鼠标放置在li元素上，会在img-preview里展示当前li元素的data-img对应的图片。 -->
+	<script>
+	  var ct = document.querySelector(".ct")
+	  var liArr = ct.querySelectorAll("li")
+	  var preview = document.querySelector(".img-preview")
+
+	  for (var i = 0; i < liArr.length; i++) {
+	  	liArr[i].addEventListener("mouseenter",function(){
+	  		var dataImg = this.getAttribute("data-img")
+	  		preview.innerHTML = '<img src="' + dataImg + '">'
+	  	})
+	  };
+
+	</script>
+</body>
+</html>
