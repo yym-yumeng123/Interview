@@ -117,6 +117,10 @@
 - [Date](https://github.com/yym-yumeng123/Interview/issues/45)
 ### javaScript任务7
 - [正则表达式](https://github.com/yym-yumeng123/Interview/issues/46)
+### javaScript任务8
+- [DOM](https://github.com/yym-yumeng123/Interview/issues/47)
+### javaScript任务9
+- [事件](https://github.com/yym-yumeng123/Interview/issues/48)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
