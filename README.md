@@ -121,6 +121,10 @@
 - [DOM](https://github.com/yym-yumeng123/Interview/issues/47)
 ### javaScript任务9
 - [事件](https://github.com/yym-yumeng123/Interview/issues/48)
+
+预览地址
+- [事件一](https://yym-yumeng123.github.io/Interview/add.html)
+- [事件二](https://yym-yumeng123.github.io/Interview/photo.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
