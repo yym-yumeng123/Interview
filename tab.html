@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab效果实现</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing:border-box;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.tab-ct{
+			width: 318px;
+			margin: 20px auto;
+		}
+		.tab-ct .header::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.tab-ct .header>li{
+			float: left;
+			text-align: center;
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #ccc;
+			border-right: none;
+		}
+		.tab-ct .header>li.active{
+			background: #ccc;
+		}
+		.tab-ct .header>li:last-child{
+			border-right: 1px solid #ccc;	
+		}
+		.tab-ct .content>li{
+			width: 300px;
+			height: 200px;
+			border: 1px solid #ccc;
+			border-top: none;
+			padding: 10px;
+			display: none;
+		}
+
+		.tab-ct .content>li.active{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="tab-ct">
+		<ul class="header">
+			<li class="active">tab1</li>
+			<li>tab2</li>
+			<li>tab3</li>
+		</ul>
+
+		<ul class="content">
+			<li class="active">内容一</li>
+			<li>abcd</li>
+			<li>内容三</li>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript">
+		var tabs = document.querySelectorAll('.tab-ct .header>li')
+		var panels = document.querySelectorAll('.tab-ct .content>li')
+		//遍历li
+		tabs.forEach(function(tab){
+			//给tab添加点击事件
+			tab.addEventListener('click',function(){
+
+				//遍历li的每一项
+				tabs.forEach(function(node){
+					//删除每一项的active类
+					node.classList.remove('active')
+				})
+
+				//点击时添加active类
+				this.classList.add('active')
+				//获取下标
+				var index = [].indexOf.call(tabs,this)
+				//遍历内容项
+				panels.forEach(function(node){
+					node.classList.remove('active')
+				})
+				panels[index].classList.add('active')
+				console.log(panels)
+			})
+		})
+
+	</script>
+</body>
+</html>
