@@ -125,6 +125,10 @@
 预览地址
 - [事件一](https://yym-yumeng123.github.io/Interview/add.html)
 - [事件二](https://yym-yumeng123.github.io/Interview/photo.html)
+### javaScript任务10
+预览地址
+
+- [tab选项卡](https://yym-yumeng123.github.io/Interview/tab.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
