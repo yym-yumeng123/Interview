@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模态框</title>
+	<style>
+        .h-modal {
+            display:none;
+        }
+        .h-modal .cover {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            background-color:rgba(0, 0, 0, 0.4);
+        } 
+        .h-modal .panel {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 600px;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .h-modal .panel header,
+        .h-modal .panel footer {
+            background-color: #3e8a85;
+            padding: 4px 16px;
+            color: #fff;
+        }
+        .h-modal .panel .close {
+            float: right;
+            margin-top: 16px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .h-modal .panel main {
+            padding: 16px;
+        }
+        .h-modal .panel footer:after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+
+        .h-modal .panel .btn {
+            float: right;
+            display:inline-block;
+            padding:3px 6px;
+            margin-left:10px;
+            border:1px solid #ccc;
+            border-radius:3px;
+            font-size:14px;
+        }
+        .h-modal .panel a {
+            text-decoration:none;
+            color:#333;
+        }
+        .open{
+        	display:block;
+        }
+    </style>
+</head>
+<body>
+	<div class="layout">
+        <div class="btn-group">
+            <button id="btn-modal">点我1</button>
+        </div>
+
+        <div class="h-modal">
+            <div class="cover"></div>
+            <div class="panel">
+                <header>
+                    <span class="close">×</span>
+                    <h3>头部</h3>
+                </header>
+                <main>
+                    <p>这是内容</p>
+                    <p>这是内容</p>
+                </main>
+                <footer>
+                    <a class="btn btn-confirm" href="#">确定</a>
+                    <a class="btn btn-cancel" href="#">取消</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    	var btn = document.querySelector('#btn-modal');
+        var modal = document.querySelector('.h-modal');
+        var modalPanel = document.querySelector('.panel');
+        var close = document.querySelector('.h-modal .panel header .close')
+        var cancel = document.querySelector('footer .btn-cancel')
+
+        //点击增加类名open,
+        btn.addEventListener('click',function(){
+        	modal.classList.add('open')
+        })
+        //点击移除open
+        close.addEventListener('click',function(){
+        	modal.classList.remove('open')
+        })
+
+        modal.addEventListener('click',function(){
+        	modal.classList.remove('open')
+        })
+
+        cancel.addEventListener('click',function(){
+        	modal.classList.remove('open')
+        })
+        //阻止事件的冒泡
+        modalPanel.addEventListener('click',function(e){
+        	e.stopPropagation()
+        })
+    </script>
+</body>
+</html>
