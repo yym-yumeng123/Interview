@@ -129,6 +129,7 @@
 预览地址
 
 - [tab选项卡](https://yym-yumeng123.github.io/Interview/tab.html)
+- [模态框](https://yym-yumeng123.github.io/Interview/click.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
