@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件代理</title>
+	<style>
+        .container{
+		  margin:30px auto;
+		  width:900px;
+		}
+		ul,li{
+		  margin:0;
+		  padding:0;
+		  list-style: none;
+		  background: pink;
+		}
+		.container li{
+		  border:1px solid #ccc;
+		  line-height:2;
+		  margin-right: 30px;
+		}
+		#show{
+		  background:#ccc;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+    <ul>
+      <li>添加1</li>
+      <li>添加2</li>
+      <li>添加3</li>
+      <li>添加4</li>
+    </ul>
+    <input id ="add-ipt" type="text"><button id ="btn">添加</button>
+    <div id="show"></div>
+  </div>
+  <script type="text/javascript">
+    /*
+    var container = document.querySelector('.container ul')
+	var liNodes = document.querySelectorAll(".container li");
+	var showNode= document.querySelector('#show')
+	var addNode = document.querySelector('#btn')
+	var addIpt = document.querySelector('#add-ipt')
+
+	liNodes.forEach(function(node){
+	  node.addEventListener('click',function(){
+	    showNode.innerText = this.innerText
+	  })
+	})
+
+	addNode.addEventListener('click',function(){
+	  var node = document.createElement('li')
+	  node.innerText = addIpt.value
+	  node.addEventListener('click',function(){
+	    showNode.innerText = this.innerText
+	  })
+	  container.appendChild(node)
+	})
+    */
+
+    var container = document.querySelector('.container ul')
+	var liNodes = document.querySelectorAll(".container li");
+	var showNode= document.querySelector('#show')
+	var addNode = document.querySelector('#btn')
+	var addIpt = document.querySelector('#add-ipt')
+
+    container.addEventListener('click',function(e){
+    	var target = e.target
+
+    	//防止事件代理点到外面也有事件
+    	if (target.tagName.toLowerCase() === 'li') {
+    		showNode.innerText = target.innerText
+    	}
+    })
+
+    addNode.addEventListener('click',function(){
+	  var node = document.createElement('li')
+	  node.innerText = addIpt.value
+	  container.appendChild(node)
+	})
+     </script>
+</body>
+</html>
