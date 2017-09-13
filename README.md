@@ -132,6 +132,13 @@
 - [模态框](https://yym-yumeng123.github.io/Interview/click.html)
 ### javaScript任务11
 - [闭包_定时器_BOM](https://github.com/yym-yumeng123/Interview/issues/49)
+
+### javaScript任务12
+- [Ajax](https://github.com/yym-yumeng123/Interview/issues/50)
+
+代码地址
+- Ajax 文件下index.html,需要开启mock-server数据
+- [加载更多](https://yym-yumeng123.github.io/Interview/Ajax/index.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
