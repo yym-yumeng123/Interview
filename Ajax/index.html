@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>加载更多</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+     #ct li{
+      list-style:none;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      cursor:pointer;
+      background-color: #59b5d6;
+    }
+    #load-more{
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+      cursor: pointer;
+    }
+    /*#load-more img{
+      width: 40px;
+      height: 40px;
+    }*/
+    .btn{
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      width: 80px;
+      border: 1px solid #da6969;
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+      color: #E27272;
+    }
+    .btn:hover{
+      background: #3aca46;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <ul id ="ct">
+  </ul>
+  <!-- <a href="javascript:void(0)"></a> undefined不跳转-->
+  <a href="#" id="load-more" class= "btn">加载更多</a>
+</body>
+
+<script>
+  //获取a链接
+  var btn = document.querySelector("#load-more")
+  var ct = document.querySelector("#ct")
+  var pageIndex = 0
+  //网速特别慢的时候,在数据到来之前防止重复点击?
+  var isDataArrive = true
+
+  btn.addEventListener("click",function(e){
+
+    e.preventDefault()
+    if(!isDataArrive){
+      return;
+    }
+
+    var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200 || xhr.status === 304) {
+
+          var result = JSON.parse(xhr.responseText)
+
+          var fragment = document.createDocumentFragment()
+          for (var i = 0; i < result.length; i++) {
+            var node = document.createElement("li")
+            node.innerText = result[i]
+            fragment.appendChild(node)
+          }
+          //插入li
+          ct.appendChild(fragment)
+          //数字每次变化5
+          pageIndex += 5
+        }else{
+          alert("错误")
+        }
+        isDataArrive = true
+      }
+    } 
+
+    xhr.open("get","/loadMore?index="+pageIndex+"&length=5",true)
+    xhr.send()
+
+    isDataArrive = false
+  })
+
+
+  /*前后端开发联调需要注意哪些事情？
+  
+  约定接口类型get/post
+  接口名字
+  接口参数
+  我要什么,后端发回的数据
+
+  1. 我需要什么?  ['new1','new2'...]
+  2. 我给什么,参数,后台给我什么参数,
+  */
+</script>
+
+
+
+
+
+</html>
