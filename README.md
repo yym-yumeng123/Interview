@@ -130,6 +130,7 @@
 
 - [tab选项卡](https://yym-yumeng123.github.io/Interview/tab.html)
 - [模态框](https://yym-yumeng123.github.io/Interview/click.html)
+- [登录/注册](https://yym-yumeng123.github.io/Interview/login/1.html)
 ### javaScript任务11
 - [闭包_定时器_BOM](https://github.com/yym-yumeng123/Interview/issues/49)
 
