@@ -144,7 +144,7 @@
 ### javaScript任务13
 - [JSONP_跨域](https://github.com/yym-yumeng123/Interview/issues/51)
 ### javaScript任务14
-
+- [jQuery初识](https://github.com/yym-yumeng123/Blog/issues/37)
 
 jQuery预览地址
 - [鼠标滑过二级菜单显示隐藏](https://yym-yumeng123.github.io/Interview/hide.html)
