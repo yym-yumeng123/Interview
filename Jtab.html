@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>tab切换</title>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .wrap {
+          width:449px;
+          border: 1px solid;
+          margin: 0 auto;
+          margin-top: 20px;
+          overflow: hidden;
+          position: relative;
+          min-height: 130px;
+        }
+        ul {
+          list-style: none;
+          text-align: center;
+        }
+        .tabs:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+        .tabs>li {
+          float: left;
+          display: inline-block;
+          width: 149px;
+          border-right: 1px solid;
+          border-bottom: 1px solid;
+          cursor: pointer;
+        }
+        .tabs>li:last-child {
+          border-right: none;
+        }
+
+        .tabs>li.active {
+          background: gainsboro;
+        }
+        .contents {
+          min-height: 100px;
+          width: 1347px;
+          position: absolute;
+          left: 0;
+        }
+        .contents>li {
+          float: left;
+        }
+
+        .contents>li:nth-child(1) {
+          background-color: #ff5659;
+          width: 449px;
+          height:120px;
+        }
+        .contents>li:nth-child(2) {
+          background-color: #fff427;
+          width: 449px;
+          height:120px;
+        }
+        .contents>li:nth-child(3) {
+          background-color: #3739ff;
+          width: 449px;
+          height:120px;
+        }
+        .contents:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+
+      </style>
+      <script src="https://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+    </head>
+<body>
+<div class="wrap">
+  <ul class="tabs">
+    <li class="active">Tab1</li>
+    <li>Tab2</li>
+    <li>Tab3</li>
+  </ul>
+
+  <ul class="contents">
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+<script>
+  $('.tabs li').on('click', function () {
+    var index = $(this).index()
+    $(this).addClass('active').siblings().removeClass("active");
+    $('.contents').animate({
+      left: -index*449
+    },1000)
+  })
+</script>
+</body>
+</html>
