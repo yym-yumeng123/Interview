@@ -140,6 +140,16 @@
 代码地址
 - Ajax 文件下index.html,需要开启mock-server数据
 - [加载更多](https://yym-yumeng123.github.io/Interview/Ajax/index.html)
+
+### javaScript任务13
+### javaScript任务14
+
+
+jQuery预览地址
+- [鼠标滑过二级菜单显示隐藏](https://yym-yumeng123.github.io/Interview/hide.html)
+- [tab切换图片展示](https://yym-yumeng123.github.io/Interview/jQueryTab.html)
+- [点击更多,加载更多效果](https://yym-yumeng123.github.io/Interview/jQueryadd.html)
+- [tab选项卡轮播](https://yym-yumeng123.github.io/Interview/Jtab.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
