@@ -88,24 +88,8 @@
 - [白屏和 FOUC(无样式内容闪烁)](https://github.com/yym-yumeng123/Interview/issues/19)
 ### javaScript任务2
 - [数据类型,运算符,流程控制语句](https://github.com/yym-yumeng123/Interview/issues/39)
-
-- JavaScript 定义了几种数据类型? 哪些是原始类型?哪些是复杂类型?原始类型和复杂类型的区别是什么?
-- typeof和instanceof的作用和区别?
-- 如何判断一个变量是否是数字、字符串、布尔、函数
-- NaN是什么? 有什么特别之处?
-- 如何把非数值转化为数值?
-- ==与===有什么区别
-- break与continue有什么区别
-- void 0 和 undefined在使用场景上有什么区别
 ### javaScript任务3
 - [函数与作用域](https://github.com/yym-yumeng123/Interview/issues/40)
-
-- 函数声明和函数表达式有什么区别
-- 什么是变量的声明前置？什么是函数的声明前置
-- arguments 是什么
-- 函数的"重载"怎样实现
-- 立即执行函数表达式是什么？有什么作用
-- 求n!，用递归来实现
 ### javaScript任务4
 - [引用类型,对象拷贝](https://github.com/yym-yumeng123/Interview/issues/41)
 
