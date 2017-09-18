@@ -151,6 +151,11 @@ jQuery预览地址
 - [tab切换图片展示](https://yym-yumeng123.github.io/Interview/jQueryTab.html)
 - [点击更多,加载更多效果](https://yym-yumeng123.github.io/Interview/jQueryadd.html)
 - [tab选项卡轮播](https://yym-yumeng123.github.io/Interview/Jtab.html)
+### javaScript任务15
+
+
+jQuery ajax地址(加载更多)
+- [加载更多](https://yym-yumeng123.github.io/Interview/jQueryAjax/index.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
