@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      border: 1px solid;
+      height: 40px;
+      line-height: 40px;
+      margin: 10px;
+      cursor: pointer;
+    }
+    li:hover {
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+<ul></ul>
+<button>加载更多</button>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+    let idx = 0, len = 5;
+    $('button').on('click', function () {
+        $.ajax({
+            url: 'news',
+            method: 'get',
+            dataType: 'JSON',
+            data: {
+                length: len,
+                index: idx
+            }
+        }).done(function (data) {
+            idx += 5;
+            appendHtml(data);
+        }).fail(function () {
+            alert('fail');
+        })
+    });
+    let appendHtml = function (data) {
+        for(let i in data){
+            $('<li>' + data[i] + '</li>').appendTo('ul');
+        }
+    }
+</script>
+
