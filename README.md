@@ -152,8 +152,7 @@ jQuery预览地址
 - [点击更多,加载更多效果](https://yym-yumeng123.github.io/Interview/jQueryadd.html)
 - [tab选项卡轮播](https://yym-yumeng123.github.io/Interview/Jtab.html)
 ### javaScript任务15
-
-
+- [jQuery Ajax](https://github.com/yym-yumeng123/Blog/issues/38)
 jQuery ajax地址(加载更多)
 - [加载更多](https://yym-yumeng123.github.io/Interview/jQueryAjax/index.html)
 ### HTML+CSS
