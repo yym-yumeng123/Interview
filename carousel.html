@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>普通轮播</title>
+	<style>
+	/*commom.css*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+
+
+		/*style.css*/
+
+
+		/*设置父容器宽高,隐藏后面的元素*/
+		.carousel{
+			position: relative;
+			width: 320px;
+			height: 180px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		/*特别重要的一步,不管容器有多宽,元素排成一列*/
+		.carousel .img-ct{
+			position: absolute;
+			overflow: hidden;
+		}
+		.carousel .img-ct>li{
+			/*浮动的表现*/
+			float: left;
+		}
+		.carousel .img-ct img{
+			width: 320px;
+			height: 180px;
+		}
+		/*设置左右点击的定位*/
+		.carousel .arrow{
+			position: absolute;
+			top: 50%;
+			margin-top: -15px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border:1px solid black; 
+			z-index: 1;
+			line-height: 30px;
+			color: red;
+			text-align: center;
+			font-size: 20px;
+			font-weight: bold;
+
+		}
+		.carousel .next{
+			right: 10px;
+		}
+		.carousel .pre{
+			left: 10px;
+		}
+		
+
+		/*选项卡父元素定位*/
+		.carousel .bullet{
+			position: absolute;
+			bottom: 10px;
+			width: 100%;
+			z-index: 1;
+			text-align: center;
+			font-size: 0;
+		}
+		/*dispaly:inline-block可以更好的利用li*/
+		.carousel .bullet>li{
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			border: 1px solid black;
+			margin: 0 3px
+		}
+		.carousel .bullet>li.active{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="carousel">
+		<!-- 图片轮播 -->
+		<ul class="img-ct">
+			<li data-id=0><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240630&di=f20047ac525b11d1dec1292d28218632&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fpic%2F201509%2F05%2F17%2F26%2F55eab55441d49915.png!600x600.jpg" alt=""></a></li>
+			<li data-id=1><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240626&di=b9de261ac317fed6822a98667e58edf2&imgtype=0&src=http%3A%2F%2Fdmimg.5054399.com%2Fallimg%2Foptuji%2Fzona%2F1.jpg" alt=""></a></li>
+			<li data-id=2><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240621&di=11074634222519a977853b35f590022f&imgtype=0&src=http%3A%2F%2Fdmimg.5054399.com%2Fallimg%2Foptuji%2Fqiaobacos%2F31.jpg" alt=""></a></li>
+			<li data-id=3><a href="#"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240618&di=0702442b9b082b8853b496d716c45563&imgtype=0&src=http%3A%2F%2Fdmimg.5054399.com%2Fallimg%2Foptuji%2Ftrt6%2F19.jpg" alt=""></a></li>
+		</ul>
+		<!-- 左右点击 -->
+		<a href="#" class="pre arrow"><</a>
+		<a href="#" class="next arrow">></a>
+		<!-- 选项卡 -->
+		<ul class="bullet">
+			<!-- 被选中 -->
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+<script>
+	//图片容器
+	var $imgCt = $(".carousel .img-ct")
+	//获取图片的数量
+	var $imgs = $(".carousel .img-ct>li")
+	//获取左右点击dom节点
+	var $preBtn = $(".carousel .pre")
+	var $nextBtn = $(".carousel .next")
+	//获取选项卡
+	var $bullets = $(".carousel .bullet li")
+
+	//声明变量
+	var pageIndex = 0
+	//加一个状态锁,定义变量
+	var isAnimate =false
+
+
+	var imgCount = $imgs.length
+	//图片的宽度
+	var imgWidth = $imgs.width()
+	//把第一个图片clone到最后
+	$imgCt.append($imgs.first().clone())
+	$imgCt.prepend($imgs.last().clone())
+	//计算父容器总宽度
+	$imgCt.width((imgCount +2)*imgWidth)
+	//让用户看到的是第一张图片我们就偏移图片
+	$imgCt.css({left: -imgWidth})
+
+	//函数展示上一页
+	$nextBtn.click(function(){
+		playNext(1)
+	})
+	//展示下一页
+	$preBtn.click(function(){
+		//1是默认滚动一格
+		playPre(1)
+	})
+
+	//点击选项卡
+	$bullets.click(function(){
+		// 获取下标
+		var index = $(this).index()
+		console.log(index)
+		//如果点击的下标比轮播图片的下标大
+		if (index > pageIndex) {
+			//执行next函数,往左偏移,到达对应位置
+			playNext(index - pageIndex)
+		}else if (index < pageIndex) {
+			playPre(pageIndex-index)
+		}
+	})
+
+	//点击下一页图片往左偏移
+	//添加参数len是下标差值
+	function playNext(len){
+		if (isAnimate)return
+		isAnimate = true
+
+		$imgCt.animate({
+			//原来基础上在减小宽度
+			left: "-=" +len*imgWidth
+		},function(){
+			//点击一次pageIndex加一次
+			pageIndex += len
+			//如果pageindex的值等于了图片的数量
+			if (pageIndex === imgCount) {
+				//pageindex立刻回到第一张图片
+				pageIndex = 0
+				//容器初始化值为图片宽度
+				$imgCt.css({left: -imgWidth})
+			}
+			setBullet()
+			isAnimate = false
+		})
+	}
+	//点击上一页图片往右偏移
+	function playPre(len){
+		$imgCt.animate({
+			//原来基础上在减小宽度
+			left: "+=" +len*imgWidth
+		},function(){
+			pageIndex -= len
+			if (pageIndex<0) {
+				pageIndex = imgCount - 1
+				$imgCt.css({left:-imgCount*imgWidth})
+			}
+			//触发选项卡函数
+			setBullet()
+		})
+	}
+
+	function setBullet(){
+		//获取li,然后移除所有的active,并给下标添加class为actie
+		$bullets.removeClass("active").eq(pageIndex).addClass("active")
+	}
+
+	setInterval(function(){
+		playNext(1)
+	},2000)
+</script>
+</body>
+</html>
