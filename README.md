@@ -141,6 +141,7 @@ jQuery ajax地址(加载更多)
 - [加载更多](https://yym-yumeng123.github.io/Interview/jQueryAjax/index.html)
 ### avaScript任务16 17 18
 - [轮播](https://yym-yumeng123.github.io/Interview/carousel.html)
+- [渐变轮播](https://yym-yumeng123.github.io/Interview/fadeIn.html)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
