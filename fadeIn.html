@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渐变轮播</title>
+	<style>
+		body,ul,li{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		.container{
+			position: relative;
+			width: 310px;
+			height: 206px;
+			margin: 0 auto;
+		}
+		.imgs{
+			position: absolute;
+		}
+		.imgs li{
+			position: absolute;
+			display: none;
+		}
+		.imgs .active1{
+			display: block;
+		}
+		img{
+			width: 310px;
+			height: 206px;
+			cursor: pointer;
+		}
+		.btn{
+			position: absolute;
+			top: 50%;
+			z-index: 1;
+			margin-top: -15px;
+			width: 30px;
+			height: 30px;
+			color: white;
+			line-height: 30px;
+			text-align: center;
+			background: #4E443C;
+			border-radius: 50%;
+			box-shadow: 0 0 2px #999;
+			opacity: 0.8;
+			cursor: pointer;
+		}
+		.btn:hover{
+			opacity: 1;
+		}
+		.left{
+			left: 10px;
+		}
+		.right{
+			right: 10px;
+		}
+		.points{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+		    transform: translateX(-50%);
+		}
+		.points li{
+			display: inline-block;
+			width: 16px;
+			height: 4px;
+			background: white;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		.points .active2{
+			background: #666;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul class="imgs">
+			<li class="active1"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240630&di=f20047ac525b11d1dec1292d28218632&imgtype=0&src=http%3A%2F%2Fv1.qzone.cc%2Fpic%2F201509%2F05%2F17%2F26%2F55eab55441d49915.png!600x600.jpg" /></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240626&di=b9de261ac317fed6822a98667e58edf2&imgtype=0&src=http%3A%2F%2Fdmimg.5054399.com%2Fallimg%2Foptuji%2Fzona%2F1.jpg" /></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240621&di=11074634222519a977853b35f590022f&imgtype=0&src=http%3A%2F%2Fdmimg.5054399.com%2Fallimg%2Foptuji%2Fqiaobacos%2F31.jpg" /></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505895240618&di=0702442b9b082b8853b496d716c45563&imgtype=0&src=http%3A%2F%2Fdmimg.5054399.com%2Fallimg%2Foptuji%2Ftrt6%2F19.jpg" /></li>
+		</ul>
+		<div class="left btn"><</div>
+		<div class="right btn">></div>
+		<ul class="points">
+			<li class="active2"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		var $imgs = $('.imgs >li')
+		var $left = $('.left')
+		var $right = $('.right')
+		var $bullets = $('.points >li')
+
+		var pageIndex = 0
+		var isAnimate = false
+		var imgCount = $imgs.length
+
+		autoPlay()
+
+		$left.on('click',function(){
+			if(isAnimate) return;
+			isAnimate = true
+			stopAuto()
+			playLast()
+			fadeIn()
+			setBullet()
+			autoPlay()
+		})
+		$right.on('click',function(){
+			if(isAnimate) return;
+			isAnimate = true
+			stopAuto()
+			playNext()
+			fadeIn()
+			setBullet()
+			autoPlay()
+		})
+
+		$bullets.on('click',function(){
+			var index = $(this).index()
+			stopAuto()
+			if(index != pageIndex){
+				$imgs.fadeOut(500)
+				pageIndex = index
+				fadeIn()
+				setBullet()
+			}
+			autoPlay()
+		})
+
+		function autoPlay(){
+			clock = setInterval(function(){
+				playNext()
+				fadeIn()
+				setBullet()
+			}, 2000);	
+		}
+		function stopAuto(){
+			clearInterval(clock);
+		}
+		
+		function playLast(){
+			$imgs.fadeOut(500)
+				pageIndex--
+				if(pageIndex === -1){
+					pageIndex = (imgCount-1)
+				}
+		}
+		function playNext(){
+			$imgs.fadeOut(500)
+			pageIndex++
+			if(pageIndex === imgCount){
+				pageIndex = 0
+			}
+		}
+
+		function fadeIn(){
+			$imgs.eq(pageIndex).fadeIn(500,function(){
+				isAnimate = false
+			})
+		}
+
+		function setBullet(){
+			$bullets.removeClass('active2')
+					.eq(pageIndex)
+					.addClass('active2')
+		}
+	</script>
+</body>
+</html>
