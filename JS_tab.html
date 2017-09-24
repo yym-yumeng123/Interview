@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tab效果实现</title>
+	<style>
+		/*转换Class,当点击哪一个拥有相应的class,其他的删除对应class*/
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing:border-box;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.tab-ct{
+			width: 318px;
+			margin: 20px auto;
+		}
+		.tab-ct .header::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.tab-ct .header>li{
+			float: left;
+			text-align: center;
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			border: 1px solid #ccc;
+			border-right: none;
+		}
+		.tab-ct .header>li.active{
+			background: #ccc;
+		}
+		.tab-ct .header>li:last-child{
+			border-right: 1px solid #ccc;	
+		}
+		.tab-ct .content>li{
+			width: 300px;
+			height: 200px;
+			border: 1px solid #ccc;
+			border-top: none;
+			padding: 10px;
+			display: none;
+		}
+
+		.tab-ct .content>li.active{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="tab-ct">
+		<ul class="header">
+			<li class="active">tab1</li>
+			<li>tab2</li>
+			<li>tab3</li>
+		</ul>
+
+		<ul class="content">
+			<li class="active">内容一</li>
+			<li>内容二</li>
+			<li>内容三</li>
+		</ul>
+	</div>
+
+
+	<script type="text/javascript">
+		//选中tab
+		var tabs = document.querySelectorAll(".tab-ct .header>li")
+		//选中内容
+		var panels = document.querySelectorAll(".tab-ct .content>li")
+
+		tabs.forEach(function(tab){
+			tab.addEventListener('click',function(){
+
+				//遍历每一项,去除class
+				tabs.forEach(function(node){
+					node.classList.remove("active")
+				})
+				tab.classList.add("active")
+
+				//获取对应的下标
+				var index = [].indexOf.call(tabs,tab)
+				console.log(index)
+				
+				//内容循环遍历
+				panels.forEach(function(node){
+					node.classList.remove("active")
+				})
+				panels[index].classList.add("active")
+
+			})
+		})
+
+
+	</script>
+</body>
+</html>
