@@ -148,7 +148,8 @@ jQuery ajax地址(加载更多)
 
 预览效果
 - [回到顶部面向对象写法](https://yym-yumeng123.github.io/Interview/scrollTOP0.html)
-
+### this_原型链_继承相关问题
+- [this_原型链_继承相关问题]((https://github.com/yym-yumeng123/Interview/issues/53)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
