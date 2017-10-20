@@ -78,56 +78,55 @@
 - [伪元素三角实现](https://yym-yumeng123.github.io/Interview/wys.html)
 ### HTML和CSS任务14
 效果预览
-
 - [作品展示页面](https://yym-yumeng123.github.io/Interview/item.html)
 - [个人简历页面](https://yym-yumeng123.github.io/Interview/rsume/resume.html)
-### javaScript任务1
+### javaScript 浏览器渲染页面
 - [浏览器的渲染机制](https://github.com/yym-yumeng123/Interview/issues/16)
 - [Repaint 和 Reflow](https://github.com/yym-yumeng123/Interview/issues/17)
 - [异步加载脚本](https://github.com/yym-yumeng123/Interview/issues/18)
 - [白屏和 FOUC(无样式内容闪烁)](https://github.com/yym-yumeng123/Interview/issues/19)
-### javaScript任务2
+### javaScript 运算符、运算符优先级相关知识点
 - [数据类型,运算符,流程控制语句](https://github.com/yym-yumeng123/Interview/issues/39)
-### javaScript任务3
+### javaScript 函数声明、函数表达式、声明前置、作用域、作用域链
 - [函数与作用域](https://github.com/yym-yumeng123/Interview/issues/40)
-### javaScript任务4
+### javaScript 引用类型、对象深拷贝和浅拷贝
 - [引用类型,对象拷贝](https://github.com/yym-yumeng123/Interview/issues/41)
 
-### javaScript任务5
+### javaScript字符串的详细使用方法，JSON 对象
 - [字符串,JSON](https://github.com/yym-yumeng123/Interview/issues/42)
-### javaScript任务6
+### javaScript 数组、Math 对象、日期函数
 - [Math](https://github.com/yym-yumeng123/Interview/issues/43)
 - [数组任务](https://github.com/yym-yumeng123/Interview/issues/44)
 - [Date](https://github.com/yym-yumeng123/Interview/issues/45)
-### javaScript任务7
+### javaScript 正则表达式详细的用法
 - [正则表达式](https://github.com/yym-yumeng123/Interview/issues/46)
-### javaScript任务8
+### javaScript  DOM 的元素选取、增删改查、属性的操作
 - [DOM](https://github.com/yym-yumeng123/Interview/issues/47)
-### javaScript任务9
+### javaScript 事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容等
 - [事件](https://github.com/yym-yumeng123/Interview/issues/48)
 
 预览地址
 - [事件一](https://yym-yumeng123.github.io/Interview/add.html)
 - [事件二](https://yym-yumeng123.github.io/Interview/photo.html)
-### javaScript任务10
+### javaScript 实现效果
 预览地址
 
 - [tab选项卡](https://yym-yumeng123.github.io/Interview/tab.html)
 - [模态框](https://yym-yumeng123.github.io/Interview/click.html)
 - [登录/注册](https://yym-yumeng123.github.io/Interview/login/1.html)
-### javaScript任务11
+### javaScript 闭包、定时器的使用、BOM 相关 API
 - [闭包_定时器_BOM](https://github.com/yym-yumeng123/Interview/issues/49)
 
-### javaScript任务12
+### javaScript AJAX
 - [Ajax](https://github.com/yym-yumeng123/Interview/issues/50)
 
 代码地址
 - Ajax 文件下index.html,需要开启mock-server数据
 - [加载更多](https://yym-yumeng123.github.io/Interview/Ajax/index.html)
 
-### javaScript任务13
+### javaScript JSONP 跨域多种实现
 - [JSONP_跨域](https://github.com/yym-yumeng123/Interview/issues/51)
-### javaScript任务14
+### jQuery 选择器、Dom操作、样式、事件处理
 - [jQuery初识](https://github.com/yym-yumeng123/Blog/issues/37)
 
 jQuery预览地址
@@ -135,7 +134,8 @@ jQuery预览地址
 - [tab切换图片展示](https://yym-yumeng123.github.io/Interview/jQueryTab.html)
 - [点击更多,加载更多效果](https://yym-yumeng123.github.io/Interview/jQueryadd.html)
 - [tab选项卡轮播](https://yym-yumeng123.github.io/Interview/Jtab.html)
-### javaScript任务15
+
+### jQuery Ajax
 - [jQuery Ajax](https://github.com/yym-yumeng123/Blog/issues/38)
 jQuery ajax地址(加载更多)
 - [加载更多](https://yym-yumeng123.github.io/Interview/jQueryAjax/index.html)
@@ -144,8 +144,9 @@ jQuery ajax地址(加载更多)
 - [渐变轮播](https://yym-yumeng123.github.io/Interview/fadeIn.html)
 - [瀑布流](https://yym-yumeng123.github.io/Interview/waterfull.html)
 ### javascript面向对象
+-[对象_原型](https://github.com/yym-yumeng123/Interview/issues/52)
 
-
+预览效果
 - [回到顶部面向对象写法](https://yym-yumeng123.github.io/Interview/scrollTOP0.html)
 
 ### HTML+CSS
