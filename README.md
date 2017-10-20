@@ -2,23 +2,23 @@
 
 > 平时遇到的题目,归结起来
 
-### HTML和CSS任务4
+### HTML: 什么是语义化？Html标签介绍
 - [HTML XHTML XML有什么区别](https://github.com/yym-yumeng123/Interview/issues/1)
 - [怎么理解HTML语义化](https://github.com/yym-yumeng123/Interview/issues/2)
 - [有哪些常见的meta标签](https://github.com/yym-yumeng123/Interview/issues/3)
 - [文档声明的作用?严格模式和混杂模式指什么?<!doctype html> 的作用?](https://github.com/yym-yumeng123/Interview/issues/4)
 - [HTML标签以及应用场景](https://github.com/yym-yumeng123/Interview/issues/5)
 - [常见的浏览器有哪些，什么内核](https://github.com/yym-yumeng123/Interview/issues/6)
-### HTML和CSS任务5
+### HTML: Form 表单如何使用？有哪些？POST 与 GET 的区别？
 - [form表单有什么作用？有哪些常用的input 标签，分别有什么作用？](https://github.com/yym-yumeng123/Interview/issues/7)
 - [post 和 get 方式的区别?](https://github.com/yym-yumeng123/Interview/issues/8)
 - [在input里，name 有什么作用？radio 如何 分组? placeholder 属性有什么作用?](https://github.com/yym-yumeng123/Interview/issues/9)
 - [type=hidden隐藏域有什么作用? 举例说明](https://github.com/yym-yumeng123/Interview/issues/10)
 - [HTML表单用法](https://github.com/yym-yumeng123/Interview/issues/11)
-### HTML和CSS任务6
+### HTML和CSS:CSS 是什么？
 - [CSS有几种引入方式? link 和@import 有什么区别?](https://github.com/yym-yumeng123/Interview/issues/14)
 - [以下几种文件路径分别用在什么地方，代表什么意思?](https://github.com/yym-yumeng123/Interview/issues/15)
-### HTML和CSS任务8
+### HTML和CSS:CSS 选择器有哪些？权重如何？常见样式书写
 - [行内元素和块级元素的区别](https://github.com/yym-yumeng123/Interview/issues/13)
 - [什么是 CSS 继承? 哪些属性能继承，哪些不能？](https://github.com/yym-yumeng123/Blog//issues/8)
 - [如何让块级元素水平居中？如何让行内元素水平居中?](https://github.com/yym-yumeng123/Blog/issues/12)
@@ -31,7 +31,7 @@
 - [表格](https://yym-yumeng123.github.io/Interview/table.html)
 - [三角形](https://yym-yumeng123.github.io/Interview/square.html)
 - [卡片](https://yym-yumeng123.github.io/Interview/Card.html)
-### HTML和CSS任务9
+### HTML和CSS: 背景、行高、盒模型、字体图标等
 - [text-align: center的作用是什么，作用在什么元素上？能让什么元素水平居中](https://github.com/yym-yumeng123/Interview/issues/21)
 - [IE 盒模型和W3C盒模型有什么区别?](https://github.com/yym-yumeng123/Interview/issues/22)
 - [*{ box-sizing: border-box;}的作用是什么？](https://github.com/yym-yumeng123/Interview/issues/25)
@@ -43,7 +43,7 @@
 效果预览
 - [css sprite](https://yym-yumeng123.github.io/Interview/sprite.html)
 - [字体图标应用](https://yym-yumeng123.github.io/Interview/fontface.html)
-### HTML和CSS任务10
+### HTML和CSS:浮动、定位、BFC、边距合并
 - [浮动元素有什么特征？对父容器、其他浮动元素、普通元素、文字分别有什么影响?](https://github.com/yym-yumeng123/Interview/issues/29)
 - [清除浮动指什么? 如何清除浮动? 两种以上方法](https://github.com/yym-yumeng123/Interview/issues/30)
 - [有几种定位方式，分别是如何实现定位的，参考点是什么，使用场景是什么？ z-index 有什么作用? 如何使用?](https://github.com/yym-yumeng123/Blog/issues/10)
@@ -56,7 +56,7 @@
 - [alert效果](https://yym-yumeng123.github.io/Interview/alert.html)
 - [模态框效果](https://yym-yumeng123.github.io/Interview/panel.html)
 - [表单效果制作](https://yym-yumeng123.github.io/Interview/form.html)
-### HTML和CSS任务11
+### HTML和CSS:CSS 单栏、双栏、三栏、圣杯、双飞翼布局
 
 效果预览
 
@@ -67,16 +67,16 @@
 - [双飞翼布局](https://yym-yumeng123.github.io/Interview/sfy.html)
 - [类似简书首页部分](https://yym-yumeng123.github.io/Interview/jianshu/index.html)
 - [风景画float布局](https://yym-yumeng123.github.io/Interview/list/list.html)
-### HTML和CSS任务12
+### HTML和CSS:浏览器兼容
 - [浏览器兼容问题](https://github.com/yym-yumeng123/Interview/issues/37)
-### HTML和CSS任务13
+### HTML和CSS:编码规范、垂直居中、伪类和伪元素
 - [遵守的编码规范](https://github.com/yym-yumeng123/Blog/issues/30)
 - [垂直居中有几种实现方式](https://github.com/yym-yumeng123/Blog/issues/12)
 
 效果预览
 
 - [伪元素三角实现](https://yym-yumeng123.github.io/Interview/wys.html)
-### HTML和CSS任务14
+### HTML和CSS: 简历静态页面
 效果预览
 - [作品展示页面](https://yym-yumeng123.github.io/Interview/item.html)
 - [个人简历页面](https://yym-yumeng123.github.io/Interview/rsume/resume.html)
@@ -149,7 +149,7 @@ jQuery ajax地址(加载更多)
 预览效果
 - [回到顶部面向对象写法](https://yym-yumeng123.github.io/Interview/scrollTOP0.html)
 ### this_原型链_继承相关问题
-- [this_原型链_继承相关问题]((https://github.com/yym-yumeng123/Interview/issues/53)
+- [this_原型链_继承相关问题](https://github.com/yym-yumeng123/Interview/issues/53)
 ### HTML+CSS
 - [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
 - [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
