@@ -56,6 +56,7 @@
 - [alert效果](https://yym-yumeng123.github.io/Interview/alert.html)
 - [模态框效果](https://yym-yumeng123.github.io/Interview/panel.html)
 - [表单效果制作](https://yym-yumeng123.github.io/Interview/form.html)
+- [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
 ### HTML和CSS:CSS 单栏、双栏、三栏、圣杯、双飞翼布局
 
 效果预览
@@ -150,18 +151,13 @@ jQuery ajax地址(加载更多)
 - [回到顶部面向对象写法](https://yym-yumeng123.github.io/Interview/scrollTOP0.html)
 ### this_原型链_继承相关问题
 - [this_原型链_继承相关问题](https://github.com/yym-yumeng123/Interview/issues/53)
-### HTML+CSS
-- [画1px高的线](https://github.com/yym-yumeng123/Interview/issues/12)
-- [效果实现点击CSS](https://yym-yumeng123.github.io/Interview/model.html)
-
-### HTML5+CSS3
 
 
 
-### JS
-- [嵌套多层数组变为一层的函数](https://github.com/yym-yumeng123/Interview/issues/24)
-- [实现reduce()功能的函数](https://github.com/yym-yumeng123/Interview/issues/33)
-- [实现一个map()函数,模拟原生的map函数](https://github.com/yym-yumeng123/Interview/issues/35)
-- [实现类似find()函数](https://github.com/yym-yumeng123/Interview/issues/36)
-- [filter 函数](https://github.com/yym-yumeng123/Interview/issues/38)
-### Ajax
+
+
+
+
+
+
+
