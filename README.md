@@ -141,6 +141,7 @@ jQuery预览地址
 jQuery ajax地址(加载更多)
 - [加载更多](https://yym-yumeng123.github.io/Interview/jQueryAjax/index.html)
 ### javaScript效果
+- [懒加载实现原理](https://github.com/yym-yumeng123/Interview/issues/54)
 - [轮播](https://yym-yumeng123.github.io/Interview/carousel.html)
 - [渐变轮播](https://yym-yumeng123.github.io/Interview/fadeIn.html)
 - [瀑布流](https://yym-yumeng123.github.io/Interview/waterfull.html)
