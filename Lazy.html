@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>懒加载</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		ul,li{
+			list-style: none;
+		}
+		.clearfix::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.layout{
+			width: 600px;
+			margin: 0 auto;
+		}
+		.layout li{
+			float: left;
+			margin: 10px 10px;
+		}
+		.layout li img{
+			width: 240px;
+			height: 180px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="layout clearfix">
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://cdn.duitang.com/uploads/item/201506/27/20150627212456_8WyRt.jpeg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://bcs.91.com/rbpiczy/Wallpaper/2015/1/9/d4b1ade76d3549bdbd94937201a32c0d-9.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://pic28.nipic.com/20130329/5311590_181255768000_2.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://e.hiphotos.baidu.com/zhidao/pic/item/94cad1c8a786c91743d61a36cb3d70cf3ac757e3.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://f.hiphotos.baidu.com/zhidao/wh%3D450%2C600/sign=bc593ec66a81800a6eb0810a84051fcc/5243fbf2b2119313dd7f38f963380cd791238dbf.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://img5.duitang.com/uploads/item/201504/24/20150424H4855_LfPvj.jpeg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://pic15.nipic.com/20110719/7993092_183736700186_2.jpg"></a></li>
+		<li><a href=""><img src="" alt="" data-src="http://5.26923.com/download/pic/000/326/56263c3bcd09dc24c2a4f513579d9c3f.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://d.hiphotos.baidu.com/zhidao/pic/item/562c11dfa9ec8a13e017c3f2f103918fa0ecc097.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://img4.duitang.com/uploads/item/201409/06/20140906230729_iyhBJ.jpeg"></a></li>
+		<li><a href=""><img src="" alt="" data-src="http://img5.duitang.com/uploads/item/201403/16/20140316153300_cKuBS.jpeg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://pic25.nipic.com/20121129/10204421_110417397107_2.jpg"></a></li>
+		<li><a href=""><img src="" alt="" data-src="http://img0.imgtn.bdimg.com/it/u=3844772691,3735509042&fm=214&gp=0.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://img2.imgtn.bdimg.com/it/u=3134010237,3744723233&fm=214&gp=0.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://img2.imgtn.bdimg.com/it/u=3134010237,3744723233&fm=214&gp=0.jpg"></a></li>
+		<li><a href=""><img src="" alt="" data-src="http://img0.imgtn.bdimg.com/it/u=3330674208,1354364788&fm=27&gp=0.jpg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://img4q.duitang.com/uploads/item/201506/06/20150606220013_r3ucd.jpeg"></a></li>
+		<li><a href=""><img src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://a0.att.hudong.com/33/30/01200000028223136359303875258.jpg"></a></li>
+		<li><a href=""><img id=b src="http://kejian.jirengu.com/data/fe/%E8%AF%BE%E4%BB%B6/32-%E6%87%92%E5%8A%A0%E8%BD%BD/code/blank.jpg" alt="" data-src="http://images.17173.com/2012/news/2012/11/29/2012cpb1129hz09s.jpg"></a></li>
+	</ul>
+
+
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+/*
+ 1. 对于所有的img标签,把真实的地址放入 自定义属性 data-img中
+ 2. 当滚动页面事,检查页面上所有的img标签,看这个标签是否出现在视野,
+ 当出现在视野,是否已经加载,如果没有加载,加载它
+*/
+
+//思路
+
+
+//先判断,图片不会出现空白
+lazyRender()
+var clock
+$(window).on("scroll",function(){
+	//函数节流
+	if (clock) {
+		clearTimeout(clock)
+	}
+	clock = setTimeout(function(){
+		lazyRender()
+		console.log("hello")
+	},300)	
+})
+
+
+function lazyRender(){
+	$(".layout li>a>img").each(function(){
+	// 判断是否已经出现在视野并且没有加载
+	if (checkShow($(this)) && !isLoaded($(this))) {
+		// 加载它
+		loadImg($(this))
+	}
+})
+}
+
+
+
+// //滚动事件
+// $(window).on("scroll",function(){
+// 	// 遍历img
+// 	$(".layout li>a>img").each(function(){
+// 		// 判断是否已经出现在视野并且没有加载
+// 		if (checkShow($(this)) && !isLoaded($(this))) {
+// 			// 加载它
+// 			loadImg($(this))
+// 		}
+// 	})
+// })
+
+//取名动宾结构
+function checkShow($img){
+	// 滚动的高度
+	var scrollTop = $(window).scrollTop()
+	//视窗的高度
+	var windowHeight = $(window).height()
+	// 图片距离顶部的垂直距离
+	var offsetTop = $img.offset().top
+	//如果图片距顶部的距离 小于 滚动距离+Window高度   并且 高度小于滚动
+	if (offsetTop < scrollTop + windowHeight && offsetTop > scrollTop) {
+		//出现在视野里
+		return true
+	}
+	return false
+}
+
+//是否加载
+function isLoaded($img){
+	return $img.attr("data-src") === $img.attr("src")
+}
+
+function loadImg($img){
+	$img.attr("src",$img.attr("data-src"))
+}
+
+</script>
+</body>
+</html>
