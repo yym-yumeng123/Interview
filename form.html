@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>表单</title>
   <style>
-    *{
+    * {
       margin: 0;
       padding: 0;
-      box-sizing:border-box;
+      box-sizing: border-box;
     }
-    .clearfix::after{
+
+    .clearfix::after {
       content: '';
       display: block;
       clear: both;
     }
-    .layout{
+
+    .layout {
       width: 600px;
       margin: 0 auto;
     }
-    .layout .information{
-      box-shadow: 1px 0 8px red,1px 0 8px red;
+
+    .layout .information {
+      box-shadow: 1px 0 8px red, 1px 0 8px red;
       padding-bottom: 10px;
     }
-    .layout .information h1{
+
+    .layout .information h1 {
       padding: 10px;
       background: #009688;
     }
-    .layout .information form{
+
+    .layout .information form {
       margin: 10px;
     }
-    .layout .information form div{
+
+    .layout .information form div {
       margin-top: 10px;
     }
-    .layout .information form label{
+
+    .layout .information form label {
       vertical-align: middle;
     }
-    .layout .information form input[type=text],.layout .information form textarea{
+
+    .layout .information form input[type=text],
+    .layout .information form textarea {
       display: block;
       width: 100%;
       border: none;
       border-bottom: 1px solid #808080;
       padding: 10px 0;
     }
-     .layout .information form .checked .check{
+
+    .layout .information form .checked .check {
       float: left;
       width: 50%;
     }
-    .layout .information form .checked .radio{
+
+    .layout .information form .checked .radio {
       float: right;
       width: 50%;
     }
-    .layout .information form .submit input[type=submit]{
+
+    .layout .information form .submit input[type=submit] {
       margin-top: 20px;
       padding: 10px;
-      background:  #009688;
+      background: #009688;
       color: #fff;
     }
   </style>
 </head>
+
 <body>
   <div class="layout">
     <div class="information">
@@ -79,7 +93,7 @@
           <textarea name="talk" id="talk" cols="30" rows="10"></textarea>
         </div>
         <!-- 选择 -->
-        <div class = "checked clearfix">
+        <div class="checked clearfix">
           <div class="check">
             <input type="checkbox" name="drink" id="milk" checked="checked">
             <label for="milk">Milk</label>
@@ -102,8 +116,9 @@
         <div class="submit">
           <input type="submit">
         </div>
-      </form> 
+      </form>
     </div>
   </div>
 </body>
+
 </html>
